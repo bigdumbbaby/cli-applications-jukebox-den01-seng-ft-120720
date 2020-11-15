@@ -51,18 +51,6 @@ def run
   puts "Please enter a command: "
   input = gets.chomp 
   
-  if input == "help"
-    help
-  elsif input == "list"
-    list(songs)
-  elsif input == "play"
-    play(songs)
-  elsif input == "exit"
-    exit_jukebox
-  else
-    puts "Please type a valid input"
-  end 
-  
   case input
     when "help"
       help
@@ -70,7 +58,12 @@ def run
       list(songs)
     when "play"
       play(songs)
-      
+    when "exit"
+      exit_jukebox
+    else 
+      puts "Please type a valid input"
+    end
+    
     
 end
 
