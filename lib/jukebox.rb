@@ -62,6 +62,15 @@ def run
   else
     puts "Please type a valid input"
   end 
+  
+  case input
+    when "help"
+      help
+    when "list" 
+      list(songs)
+    when "play"
+      play(songs)
+      
     
 end
 
